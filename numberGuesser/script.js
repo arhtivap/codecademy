@@ -17,3 +17,14 @@ function generateTarget() {
 function getAbsoluteDistance(num1,num2) {
     return Math.abs(num1-num2)
 }
+
+function compareGuesses(humanGuess,computerGuess,targetNumber) {
+    checkUserGuess(humanGuess)
+    const humanDifference = getAbsoluteDistance(humanGuess,targetNumber)
+    const computerDifference = getAbsoluteDistance(computerGuess,targetNumber)
+    if (humanDifference <= computerDifference) {
+       return true 
+    } else {
+       return false 
+    }
+}
