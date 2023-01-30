@@ -28,3 +28,15 @@ function compareGuesses(humanGuess,computerGuess,targetNumber) {
        return false 
     }
 }
+
+function updateScore(winner) {
+    if (winner == 'human') {
+        humanScore += 1
+    } else {
+        computerScore += 1
+    }
+}
+
+function advanceRound() {
+    currentRoundNumber += 1
+}
