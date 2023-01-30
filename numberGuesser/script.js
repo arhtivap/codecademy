@@ -4,3 +4,8 @@ let currentRoundNumber = 1;
 
 // Write your code below:
 
+function checkUserGuess(humanGuess) {
+    if (humanGuess<0 || humanGuess>9) {
+       alert('Your number is out of range.') 
+    }
+}
