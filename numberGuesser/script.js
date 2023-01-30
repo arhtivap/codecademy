@@ -9,3 +9,7 @@ function checkUserGuess(humanGuess) {
        alert('Your number is out of range.') 
     }
 }
+
+function generateTarget() {
+    return Math.floor(Math.random()*10)  
+  }
