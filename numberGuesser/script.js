@@ -12,4 +12,8 @@ function checkUserGuess(humanGuess) {
 
 function generateTarget() {
     return Math.floor(Math.random()*10)  
-  }
+}
+
+function getAbsoluteDistance(num1,num2) {
+    return Math.abs(num1-num2)
+}
